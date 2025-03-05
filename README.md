@@ -1,85 +1,40 @@
-# HRollCall - Blockchain-Powered Attendance System
 
-HRollCall is a decentralized attendance management system that leverages blockchain technology to provide secure, transparent, and efficient attendance tracking for educational institutions and organizations.
+# Setting Up Your Development Environment  
 
-## Features
+Follow these steps to set up your development environment efficiently:  
 
-- **Decentralized Verification**: Secure attendance records using blockchain technology
-- **QR Code Integration**: Easy attendance marking through QR code scanning
-- **Role-Based Access**: Separate interfaces for teachers and students
-- **Real-Time Updates**: Instant attendance tracking and verification
-- **Tamper-Proof Records**: Immutable attendance data stored on the blockchain
-- **Analytics Dashboard**: Comprehensive attendance statistics and reporting
-
-## Tech Stack
-
-- **Frontend Framework**: React with TypeScript
-- **Build Tool**: Vite
-- **Styling**: Tailwind CSS
-- **Animations**: Framer Motion
-- **Decentralised Ledger**: Hedera 
-
-## Getting Started
-
-### Prerequisites
-
-- Node.js (v16 or higher)
-- npm or yarn
-- MetaMask wallet
-
-### Installation
-
-1. Clone the repository
-```bash
-git clone https://github.com/notnotrachit/hrollcall.git
-cd hrollcall
+## 1️⃣ Install `uv`  
+`uv` is a fast package manager for Python. Install it using:  
+```sh
+pip install uv
 ```
 
-2. Install dependencies
-```bash
-npm install
-# or
-pnpm install
+## 2️⃣ Set Up a Virtual Environment  
+Create a virtual environment using `uv`:  
+```sh
+uv venv
 ```
 
-3. Start the development server
-```bash
-npm run dev
-# or
-pnpm run dev
+## 3️⃣ Activate the Virtual Environment  
+On macOS/Linux:  
+```sh
+source .venv/bin/activate
+```
+On Windows (PowerShell):  
+```sh
+.venv\Scripts\Activate
 ```
 
-4. Open your browser and visit `http://localhost:8080`
-
-### Connecting to Hedera
-
-1. Install MetaMask browser extension
-2. Add Hedera Testnet
-3. Connect your wallet to the application
-4. Select your role (Teacher/Student)
-
-## Usage
-
-### For Teachers
-
-- Create new classes
-- Generate attendance QR codes
-- View attendance records
-- Download attendance reports
-- Manage student enrollments
-
-### For Students
-
-- Scan QR codes to mark attendance
-- Check enrolled classes
-
-## Project Structure
-
+## 4️⃣ Install Python Dependencies  
+Use `uv` to install the required Python dependencies:  
+```sh
+uv pip install .
 ```
-src/
-├── components/         # Reusable UI components
-├── context/           # React context providers
-├── lib/              # Utility functions and blockchain services
-├── pages/            # Main application pages
-└── styles/           # Global styles and Tailwind config
+
+## 5️⃣ Install Moccasin Dependencies  
+Run the following command to install Moccasin dependencies:  
+```sh
+uv run moccasin install
 ```
+
+Now you're all set! 🚀
